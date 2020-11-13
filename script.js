@@ -1,10 +1,13 @@
 var currentPlayer = '0';
 var won = false;
+var winner;
 
 function place(box) {
   if(box.innerText !== '' || won) return;
 
   box.innerText = currentPlayer;
+  box.style.color = currentPlayer === '0' ? 'tomato' : 'blue';
+  winner = currentPlayer === '0' ? 'нолики' : 'крестики';
   currentPlayer = currentPlayer === '0' ? 'X' : '0';
 
   checkGameBoard();
@@ -32,7 +35,9 @@ function checkGameBoard() {
 
 function checkWinner(first, second, third) {
   if(first !== '' && first === second && first === third) {
-    alert('Победитель');
+    var winnerBlock = document.querySelector('.winner');
+    winnerBlock.style.color = winner === 'нолики' ? 'tomato' : 'blue';
+    winnerBlock.innerText = 'Победили ' + winner + '!';
     won = true;
   };
 }

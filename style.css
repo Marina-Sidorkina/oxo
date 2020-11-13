@@ -1,11 +1,26 @@
-.row {
-  clear: both;
+.header,
+.winner {
+  font-size: 28px;
+  text-align: center;
 }
 
-.row div {
-  padding: 10px;
+.field {
+  width: 165px;
+  margin: 0 auto;
+  border: 0.5px solid black;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  height: 55px;
+  width: 55px;
   border: 1px solid black;
-  height: 30px;
-  width: 30px;
-  float: left;
 }

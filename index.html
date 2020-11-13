@@ -5,24 +5,25 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    Щелкни, чтобы сыграть в крестики-нолики.</br>
-    <div>
+    <h1 class="header">Щелкни,</br> чтобы сыграть в крестики-нолики.</h1>
+    <div class="field">
       <div class="row">
-        <div id="0_0" onclick="place(this)"></div>
-        <div id="1_0" onclick="place(this)"></div>
-        <div id="2_0" onclick="place(this)"></div>
+        <div class="cell" id="0_0" onclick="place(this)"></div>
+        <div class="cell" id="1_0" onclick="place(this)"></div>
+        <div class="cell" id="2_0" onclick="place(this)"></div>
       </div>
       <div class="row">
-        <div id="0_1" onclick="place(this)"></div>
-        <div id="1_1" onclick="place(this)"></div>
-        <div id="2_1" onclick="place(this)"></div>
+        <div class="cell" id="0_1" onclick="place(this)"></div>
+        <div class="cell" id="1_1" onclick="place(this)"></div>
+        <div class="cell" id="2_1" onclick="place(this)"></div>
       </div>
       <div class="row">
-        <div id="0_2" onclick="place(this)"></div>
-        <div id="1_2" onclick="place(this)"></div>
-        <div id="2_2" onclick="place(this)"></div>
+        <div class="cell" id="0_2" onclick="place(this)"></div>
+        <div class="cell" id="1_2" onclick="place(this)"></div>
+        <div class="cell" id="2_2" onclick="place(this)"></div>
       </div>
     </div>
+    <p class="winner"></p>
     <script src="script.js"></script>
   </body>
 </html>
